@@ -10,7 +10,7 @@ $$
         ELSIF (NEW.name = 'Horde') THEN
             NEW.name = 'Horde';
         ELSE
-         RAISE EXCEPTION '% cannot be a fraction', NEW.ename;
+         RAISE EXCEPTION '% cannot be a fraction', NEW.name;
         END IF;
         RETURN NEW;
      END;
